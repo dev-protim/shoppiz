@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Georgia Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Georgia Bold"), url("../font/georgiab.woff") format("woff");
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Georgia Bold";
+}
+
+p {
+  font-size: 15px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: 0.2s color linear !important;
+}
+a:hover {
+  color: #C19A6B;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.page-info {
+  background-color: #000000;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.page-info__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.page-info__content--item {
+  color: #FBFBFB;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.page-info__content--item i {
+  margin-right: 10px;
+}
+.page-info__content--item a {
+  color: #FBFBFB;
+}
+.page-info__content--item a:hover {
+  color: #ffffff;
+}
+.page-info__dropdown {
+  display: flex;
+  align-items: center;
+}
+.page-info__dropdown--item:not(:last-child) {
+  margin-right: 25px;
+}
+.page-info__dropdown--item span img {
+  width: 23px;
+  vertical-align: -1px;
+  margin-right: 4px;
+}
+.page-info__dropdown--item .dropdown-item img {
+  margin-right: 6px;
+  width: 21px;
+  vertical-align: -1px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.header-item {
+  flex: 0 0 auto;
+  width: 33.33%;
+}
+.header-item__action {
+  line-height: 1;
+  text-align: right;
+}
+.header-item__action li {
+  display: inline-block;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.header-item__action li:hover {
+  color: #C19A6B;
+}
+.header-item__action li:not(:first-child) {
+  margin-left: 20px;
+}
+
+.hero-carousel__section {
+  height: 500px;
+  position: relative;
+}
+.hero-carousel__section .header {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+}
+
+.dropdown-toggle {
+  position: relative;
+  cursor: pointer;
+}
+.dropdown-toggle:after {
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+  border: 0;
+  font-weight: 900;
+  vertical-align: 1px;
+  line-height: 1;
+  font-size: 13px;
+  margin-left: 10px;
+}
+.dropdown-menu {
+  border: 0;
+  box-shadow: 0px 1px 20px 0 rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+}
+.dropdown-item {
+  color: #000000 !important;
+  font-size: 14px;
+}
+.dropdown-item:hover {
+  color: #C19A6B !important;
+  background-color: transparent;
+}
+
+.navbar-expand-lg {
+  padding: 0;
+}
+.navbar-expand-lg .navbar-nav {
+  width: 100%;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  position: relative;
+}
+.navbar-expand-lg .navbar-nav .nav-link:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  background-color: #C19A6B;
+  width: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #C19A6B;
+}
+.navbar-expand-lg .navbar-nav .nav-link.active {
+  font-weight: 600;
+  color: #C19A6B;
+}/*# sourceMappingURL=style.css.map */
