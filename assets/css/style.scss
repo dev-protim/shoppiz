@@ -1,5 +1,7 @@
 // Import fonts here
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url(./components/page-info/page-info.css);
+@import url(./components/header/header.css);
 
 @font-face {
     font-family: 'Georgia Bold';
@@ -16,6 +18,7 @@ $yellow: #C19A6B;
 body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    color: $black;
 }
 
 h1,
@@ -50,194 +53,31 @@ ul {
     margin-bottom: 0;
 }
 
-// Page info starts
-.page-info {
-    background-color: $black;
-    padding-top: 7px;
-    padding-bottom: 7px;
+button {
 
-    &__content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-left: -5px;
-        margin-right: -5px;
-
-        &--item {
-            color: #FBFBFB;
-            font-size: 15px;
-            padding-left: 5px;
-            padding-right: 5px;
-
-            i {
-                margin-right: 10px;
-            }
-
-            a {
-                color: #FBFBFB;
-
-                &:hover {
-                    color: #ffffff;
-                }
-            }
-        }
-    }
-
-    &__dropdown {
-        display: flex;
-        align-items: center;
-
-        &--item {
-            &:not(:last-child) {
-                margin-right: 25px;
-            }
-            span {
-                img {
-                    width: 23px;
-                    vertical-align: -1px;
-                    margin-right: 4px;
-                }
-            }
-            .dropdown {
-                &-item {
-                    img {
-                        margin-right: 6px;
-                        width: 21px;
-                        vertical-align: -1px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-// Page info ends
-
-// Header starts
-.header {
-    &-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    &-logo {
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: center;
-    }
-    &-item {
-        flex: 0 0 auto;
-        width: 33.33%;
-        &__action {
-            line-height: 1;
-            text-align: right;
-            li {
-                display: inline-block;
-                color: $black;
-                cursor: pointer;
-                transition: all 0.3s linear;
-                &:hover {
-                    color: $yellow;
-                }
-                &:not(:first-child) {
-                    margin-left: 20px;
-                }
-            }
-        }
-    }
-}
-// Header ends
-// Hero carousel starts
-.hero {
-    &-carousel {
-        &__section {
-            height: 500px;
-            // background-color: red;
-            position: relative;
-            .header {
-                position: absolute;
-                top: 25px;
-                left: 0;
-                width: 100%;
-            }
-        }
-    }
-}
-// Hero carousel ends
-
-
-// Write Override CSS here
-.dropdown {
-    &-toggle {
-        position: relative;
-        cursor: pointer;
-
-        &:after {
-            content: "\f078";
-            font-family: "Font Awesome 6 Free";
-            border: 0;
-            font-weight: 900;
-            vertical-align: 1px;
-            line-height: 1;
-            font-size: 13px;
-            margin-left: 10px;
-        }
-    }
-
-    &-menu {
+    &:active,
+    &:focus {
+        outline: 0;
         border: 0;
-        box-shadow: 0px 1px 20px 0 rgb(0 0 0 / 3%);
-        border-radius: 5px;
-    }
-
-    &-item {
-        color: $black  !important;
-        font-size: 14px;
-
-        &:hover {
-            color: $yellow  !important;
-            background-color: transparent;
-        }
+        box-shadow: none !important;
     }
 }
-.navbar-expand-lg {
-    padding: 0;
-    .navbar-nav {
-        width: 100%;
-        .nav-link {
-            padding: 0;
-            font-size: 14px;
-            font-weight: 400;
-            color: $black;
-            position: relative;
-            &:after {
-                content: "";
-                position: absolute;
-                top: 100%;
-                left: 0;
-                height: 2px;
-                background-color: $yellow;
-                width: 0;
-                opacity: 0;
-                transition: all 0.3s ease-in-out;
-            }
-            &:hover {
-                color: $yellow;
-                // &:not(.active) {
-                //     &:after {
-                //         width: 23px;
-                //         opacity: 1;
-                //     }
-                // }
-            }
-            &.active {
-                font-weight: 600;
-                color: $yellow;
-                // &:after {
-                //     width: 23px;
-                //     opacity: 1;
-                // }
-            }
-        }
+
+.main-btn {
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #000000;
+    color: #ffffff;
+    border: 0;
+    padding: 13px 25px;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+
+    @media only screen and (min-width: 992px) {
+        font-size: 20px;
+        padding: 15px 40px;
     }
 }

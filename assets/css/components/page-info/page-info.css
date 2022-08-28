@@ -1,0 +1,100 @@
+:root {
+  --page-info-height: 38px;
+}
+
+.page-info {
+  background-color: #000000;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.page-info__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.page-info__content--item {
+  flex: 1;
+  color: #FBFBFB;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.page-info__content--item i {
+  margin-right: 10px;
+}
+.page-info__content--item a {
+  color: #FBFBFB;
+}
+.page-info__content--item a:hover {
+  color: #ffffff;
+}
+.page-info__dropdown {
+  display: flex;
+  align-items: center;
+}
+.page-info__dropdown--item {
+  font-size: 15px;
+}
+.page-info__dropdown--item:not(:last-child) {
+  margin-right: 25px;
+}
+.page-info__dropdown--item span img {
+  width: 23px;
+  vertical-align: -1px;
+  margin-right: 4px;
+}
+.page-info__dropdown--item .dropdown-item img {
+  margin-right: 6px;
+  width: 21px;
+  vertical-align: -1px;
+}
+
+.dropdown-toggle {
+  position: relative;
+  cursor: pointer;
+}
+.dropdown-toggle:after {
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+  border: 0;
+  font-weight: 900;
+  vertical-align: 1px;
+  line-height: 1;
+  font-size: 13px;
+  margin-left: 10px;
+}
+.dropdown-menu {
+  border: 0;
+  box-shadow: 0px 1px 20px 0 rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+}
+.dropdown-item {
+  color: #000000 !important;
+  font-size: 14px;
+}
+.dropdown-item:hover {
+  color: #C19A6B !important;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-info__content--item {
+    font-size: 16px;
+  }
+  .dropdown-toggle:after {
+    font-size: 14px;
+  }
+  .dropdown-item {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .page-info {
+    height: var(--page-info-height);
+  }
+  .page-info__content--item {
+    flex: 0 0 auto;
+  }
+}/*# sourceMappingURL=page-info.css.map */

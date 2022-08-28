@@ -1,50 +1,14 @@
+:root {
+    --page-info-height: 38px;
+}
+
 // From 768px
 @media only screen and (min-width: 768px) {
     p {
         font-size: 16px;
     }
-    .page-info {
-        &__content {
-            &--item {
-                font-size: 16px;
-            }
-        }
-    }
-    .dropdown {
-        &-toggle {
-            &:after {
-                font-size: 14px;
-            }
-        }
-        &-item {
-            font-size: 15px;
-        }
-    }
-    .navbar-expand-lg {
-        .navbar-nav {
-            justify-content: space-between;
-            .nav-item {
-                &:not(:last-child) {
-                    margin-right: 15px;
-                }
-            }
-            .nav-link {
-                font-size: 15px;
-                &:hover {
-                    &:not(.active) {
-                        &:after {
-                            width: 23px;
-                            opacity: 1;
-                        }
-                    }
-                }
-                &.active {
-                    &:after {
-                        width: 23px;
-                        opacity: 1;
-                    }
-                }
-            }
-        }
-    }
+}
+
+// From 991px
+@media only screen and (min-width: 992px) {
 }
